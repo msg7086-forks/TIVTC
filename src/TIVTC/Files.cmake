@@ -9,8 +9,6 @@ FILE(GLOB TIVTC_Sources RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}"
   "../common/*.cpp"
 )
 
-message("${TIVTC_Sources}")
-
 IF( MSVC OR MINGW )
     # Export definitions in general are not needed on x64 and only cause warnings,
     # unfortunately we still must need a .def file for some COM functions.
