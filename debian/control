@@ -1,0 +1,20 @@
+Source: tivtc
+Section: libs
+Priority: optional
+Maintainer: Xinyue Lu <i@7086.in>
+Bugs: https://github.com/pinterf/TIVTC/issues
+Homepage: https://github.com/pinterf/TIVTC
+Standards-Version: 4.5.0
+Build-Depends: debhelper-compat (= 12)
+
+# -yuuki tag is used for yuuki's own builds.
+# Replace it with your own tag for your own builds.
+
+Package: avisynth-tivtc-yuuki
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: avisynth-tivtc
+Conflicts: avisynth-tivtc
+Description: Plugin for AviSynthPlus: TIVTC and TDeint
+ TIVTC is an IVTC filter. TDeint is an deinterlace filter.
